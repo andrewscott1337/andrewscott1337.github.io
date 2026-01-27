@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew Scott — Audio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #111111;
+            --muted: #888888;
+            --border: #eeeeee;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: var(--bg); 
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            padding: 8vw 10vw; /* Using viewport units for responsive spacing */
+        }
+
+        /* Header */
+        header { margin-bottom: 100px; }
+        h1 { font-size: 18px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; }
+        .subtitle { font-size: 14px; color: var(--muted); }
+
+        /* Sections */
+        section { margin-bottom: 80px; max-width: 600px; }
+        h2 { font-size: 12px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.2em; color: var(--muted); margin-bottom: 30px; }
+
+        /* Project Links */
+        .list { display: flex; flex-direction: column; gap: 12px; }
+        .item { 
+            text-decoration: none; 
+            color: var(--text); 
+            font-size: 15px;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            transition: opacity 0.2s ease;
+            border-bottom: 1px solid transparent;
+            padding-bottom: 4px;
+        }
+        .item:hover { opacity: 0.5; border-bottom: 1px solid var(--text); }
+        .year { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+        /* Simple Socials */
+        .social-links a { 
+            text-decoration: none; 
+            color: var(--text); 
+            font-size: 14px; 
+            margin-right: 20px; 
+            border-bottom: 1px solid var(--text);
+        }
+
+        /* Minimal Contact Form */
+        .contact-area { margin-top: 100px; border-top: 1px solid var(--border); padding-top: 50px; }
+        form { display: flex; flex-direction: column; gap: 20px; }
+        input, textarea { 
+            border: none; 
+            border-bottom: 1px solid var(--border); 
+            padding: 10px 0; 
+            font-family: inherit; 
+            font-size: 14px; 
+            outline: none; 
+            background: transparent;
+        }
+        input:focus, textarea:focus { border-bottom: 1px solid var(--text); }
+        button { 
+            align-self: flex-start; 
+            background: var(--text); 
+            color: white; 
+            border: none; 
+            padding: 10px 30px; 
+            font-size: 12px; 
+            text-transform: uppercase; 
+            letter-spacing: 0.1em; 
+            cursor: pointer; 
+        }
+
+        @media (max-width: 768px) {
+            body { padding: 40px 25px; }
+            h1 { font-size: 16px; }
+            .item { font-size: 14px; flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Andrew Scott</h1>
+    <p class="subtitle">Music and Audio Engineering</p>
+</header>
+
+<div class="content">
+    
+    <section>
+        <h2>Music</h2>
+        <div class="list">
+            <a href="URL_HERE" class="item">
+                <span>Max Gowan — Last Companion (Mix/Master)</span>
+                <span class="year">2020</span>
+            </a>
+            <a href="URL_HERE" class="item">
+                <span>Artist Name — Album Title (Production)</span>
+                <span class="year">2022</span>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Film</h2>
+        <div class="list">
+            <a href="URL_HERE" class="item">
+                <span>Agnosia (Sound Recordist)</span>
+                <span class="year">2021</span>
+            </a>
+            <a href="URL_HERE" class="item">
+                <span>Short Film Title (Sound Design)</span>
+                <span class="year">2023</span>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Socials</h2>
+        <div class="social-links">
+            <a href="URL_HERE">YouTube</a>
+            <a href="URL_HERE">Instagram</a>
+        </div>
+    </section>
+
+    <section class="contact-area">
+        <h2>Contact</h2>
+        <form action="https://formspree.io/f/YOUR_ID" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="3" placeholder="Project details" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</div>
+
+</body>
+</html>
