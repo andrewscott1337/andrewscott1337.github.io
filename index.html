@@ -73,9 +73,10 @@
     }
     
     .item:hover {
-        color: var(--muted);
+        color: var(--muted, #4a4a4a); /* Using a darker gray fallback */
+        cursor: crosshair;           /* Changes the mouse to a + on hover */
         /* border-bottom: 1px solid var(--muted); */
-    }    
+}
        
 
     .year { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -285,6 +286,7 @@
 
 </body>
 </html>
+
 
 
 
