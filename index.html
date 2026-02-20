@@ -6,7 +6,7 @@
     <title>Andrew Scott — Audio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Gloock&display=swap" rel="stylesheet">
     
     <style>
         :root {
@@ -29,14 +29,22 @@
 
     /* Header */
     header { margin-bottom: 100px; }
-    h1 { font-size: 45px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; }
+    
+    /* Updated for Gloock Font */
+    h1 { 
+        font-family: 'Gloock', serif; 
+        font-size: 56px; 
+        font-weight: 400; 
+        text-transform: none; 
+        letter-spacing: -0.01em; 
+    }
+    
     .subtitle { font-size: 30px; color: var(--muted); }
 
     /* Sections */
     section { 
         margin-bottom: 80px; 
         max-width: 600px; 
-        /* Animation properties added here */
         opacity: 0; 
         animation: fadeInUp 0.8s ease-out forwards;
     }
@@ -52,11 +60,9 @@
         display: flex;
         justify-content: space-between;
         padding: 12px 0;
-    /* border-bottom: 1px solid var(--border); */
-        transition: color 0.2s ease; /* Only animate the color */
+        transition: color 0.2s ease; 
     }
     
-    /* 2. The Hover: Just change the color/opacity, no movement */
     .item:hover {
         color: var(--muted);
         border-bottom: 1px solid var(--muted);
@@ -106,18 +112,16 @@
         to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Staggered Timing (Sequence) */
-    section:nth-child(1) { animation-delay: 0.2s; } /* First section */
-    section:nth-child(2) { animation-delay: 0.4s; } /* Second section */
-    section:nth-child(3) { animation-delay: 0.6s; } /* Third section */
-    section:nth-child(4) { animation-delay: 0.8s; } /* Fourth section */
-    section:nth-child(5) { animation-delay: 1.0s; } /* Fifth section */
+    section:nth-child(1) { animation-delay: 0.2s; }
+    section:nth-child(2) { animation-delay: 0.4s; }
+    section:nth-child(3) { animation-delay: 0.6s; }
+    section:nth-child(4) { animation-delay: 0.8s; }
+    section:nth-child(5) { animation-delay: 1.0s; }
 
     @media (max-width: 768px) {
         body { padding: 40px 25px; }
-        h1 { font-size: 16px; }
+        h1 { font-size: 32px; }
         .item { font-size: 14px; flex-direction: column; gap: 4px; }
-        .item::after { display: none; } /* Hide hover text on mobile */
     }
         
     </style>
@@ -134,35 +138,35 @@
     <section>
         <h2>Collaborations</h2>
         <div class="list">
-            <a href="https://open.spotify.com/album/2FRwLkLVppCojILhRzYDKW" class="item">
+            <a href="#" class="item">
                 <span>Minds Eye - RUN LIKE HELL (Guitar, Songwriting)</span>
                 <span class="year">2025</span>
             </a>
-            <a href="https://open.spotify.com/album/2YKrT7Izbd8U5muoR0ZNaL" class="item">
+            <a href="#" class="item">
                 <span>Blacksound - A Place With No Name (Guitar, Songwriting, Engineering)</span>
                 <span class="year">2025</span>
             </a>
-            <a href="https://open.spotify.com/track/2n0iaTDzGLLzajHt0Vo0lC" class="item">
+            <a href="#" class="item">
                 <span>Minds Eye - Modern Fear (Guitar, Songwriting)</span>
                 <span class="year">2023</span>
             </a>
-             <a href="https://open.spotify.com/album/2YKrT7Izbd8U5muoR0ZNaL" class="item">
+             <a href="#" class="item">
                 <span>Minds Eye - Long Nights and Wasted Affairs (Guitar, Songwriting)</span>
                 <span class="year">2023</span>
             </a>
-            <a href="https://open.spotify.com/album/6TAqeUCony0iS4iJLVAuZb" class="item">
+            <a href="#" class="item">
                 <span>Blacksound - Breathless (Guitar, Songwriting)</span>
                 <span class="year">2021</span>
             </a>
-            <a href="https://open.spotify.com/album/6TAqeUCony0iS4iJLVAuZb" class="item">
+            <a href="#" class="item">
                 <span>Realm of Mind & Andrew Scott - Secret Wisdom (Guitar, Mix/Master)</span>
                 <span class="year">2021</span>
             </a>        
-            <a href="https://open.spotify.com/album/6TAqeUCony0iS4iJLVAuZb" class="item">
+            <a href="#" class="item">
                 <span>Blacksound - Pathos (Guitar, Songwriting)</span>
                 <span class="year">2020</span>
             </a>
-            <a href="https://open.spotify.com/artist/51Bl5AnprBnY2KtAL27wTx" class="item">
+            <a href="#" class="item">
                 <span>Cromagnon - Back To The Caves/King Kong (Guitar, Mix/Master)</span>
                 <span class="year">2019, 2021</span>           
             </a>  
@@ -180,17 +184,13 @@
     <section>
         <h2>Production</h2>
         <div class="list">
-            <a href="https://open.spotify.com/track/7jHttFfeLOt8N2LyinBr6v" class="item">
-                <span>Happy Verdelet - Hate Creatoin (Mix/Master)</span>
+            <a href="#" class="item">
+                <span>Happy Verdelet - Hate Creation (Mix/Master)</span>
                 <span class="year">2024</span>
             </a>
-            <a href="https://open.spotify.com/album/2RPUyCqwFs3ibwL69WW6BY" class="item">
+            <a href="#" class="item">
                 <span>Happy Pill - Decent Descent (Mix/Master)</span>
                 <span class="year">2021</span>
-            </a>
-            <a href="URL_HERE" class="item">
-                <span>Short Film Title (Sound Design)</span>
-                <span class="year">2023</span>
             </a>
         </div>
     </section>
@@ -240,11 +240,11 @@
     <section>
         <h2>Film</h2>
         <div class="list">
-            <a href="URL_HERE" class="item">
+            <a href="#" class="item">
                 <span>Agnosia (Sound Recordist)</span>
                 <span class="year">2021</span>
             </a>
-            <a href="URL_HERE" class="item">
+            <a href="#" class="item">
                 <span>Short Film Title (Sound Design)</span>
                 <span class="year">2023</span>
             </a>
@@ -254,11 +254,11 @@
     <section>
         <h2>Socials</h2>
         <div class="social-links">
-            <a href="URL_HERE">YouTube</a>
-            <a href="URL_HERE">Instagram</a>
-            <a href="URL_HERE">LinkedIn</a>
-            <a href="URL_HERE">Blacksound</a>
-            <a href="URL_HERE">Minds Eye</a>
+            <a href="#">YouTube</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Blacksound</a>
+            <a href="#">Minds Eye</a>
         </div>
     </section>
 
@@ -275,7 +275,6 @@
 </div>
 
 </body>
-
 </html>
 
 
