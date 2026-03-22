@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Libre+Baskerville&family=Gloock&display=swap" rel="stylesheet">
-    
+
     <style>
         :root {
         --bg: #faf8f6;
@@ -18,39 +18,52 @@
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    body { 
-        font-family: 'Inter', sans-serif; 
-        background-color: var(--bg); 
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
         color: var(--text);
-        line-height: 0.8;
+        line-height: 1.5;
         -webkit-font-smoothing: antialiased;
         padding: 8vw 10vw;
     }
 
     /* Header */
-    header { margin-bottom: 100px; }
-    
+    header { margin-bottom: 60px; }
+
     /* Updated for Gloock Font */
-    h1 { 
-        font-family: 'Gloock', serif; 
-        font-size: 66px; 
-        font-weight: 400; 
-        text-transform: none; 
-        letter-spacing: -0.01em; 
-        line-height: 1.2;     
+    h1 {
+        font-family: 'Gloock', serif;
+        font-size: 66px;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
         margin-bottom: 10px;
     }
-    
+
     .subtitle { font-family: 'Gloock', serif; font-size: 30px; font-weight: 300; color: var(--muted); margin-top: 15px; /* Adjust this value to your liking */ }
 
+    .logo-container {
+        text-align: left;
+        margin: 30px 0 10px 0;
+        opacity: 0;
+        animation: fadeInUp 0.3s ease-out forwards;
+        animation-delay: 0.1s;
+    }
+    .main-logo {
+        max-width: 120px;
+        height: auto;
+        display: block;
+    }
+
     /* Sections */
-    section { 
-        margin-bottom: 80px; 
-        max-width: 600px; 
-        opacity: 0; 
+    section {
+        margin-bottom: 80px;
+        max-width: 600px;
+        opacity: 0;
         animation: fadeInUp 0.3s ease-out forwards;
     }
-    
+
     h2 {
           font-family: 'Libre Baskerville', serif;
           font-size: 22px;
@@ -58,67 +71,67 @@
           font-style: italic;
           text-transform: uppercase;
           /* Changed from var(--muted) to a darker charcoal for better legibility */
-          color: #444444; 
+          color: #444444;
           margin-bottom: 20px;
         }
-    
-   
+
+
     .item {
-        position: relative; 
+        position: relative;
         text-decoration: none;
         color: var(--text);
         font-size: 12px;
         display: flex;
         justify-content: space-between;
         padding: 12px 0;
-        transition: color 0.2s ease; 
+        transition: color 0.2s ease;
     }
-    
+
     .item:hover {
         color: var(--muted, #4a4a4a); /* Using a darker gray fallback */
         cursor: crosshair;           /* Changes the mouse to a + on hover */
         /* border-bottom: 1px solid var(--muted); */
 }
-       
+
 
     .year { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
 
     /* Socials */
-    .social-links a { 
-        text-decoration: none; 
-        color: var(--text); 
-        font-size: 14px; 
-        margin-right: 20px; 
+    .social-links a {
+        text-decoration: none;
+        color: var(--text);
+        font-size: 14px;
+        margin-right: 20px;
         border-bottom: 1px solid var(--text);
     }
 
     /* Contact Form */
     .contact-area { margin-top: 100px; border-top: 1px solid var(--border); padding-top: 50px; }
     form { display: flex; flex-direction: column; gap: 20px; }
-    input, textarea { 
-        border: none; 
-        border-bottom: 1px solid var(--border); 
-        padding: 10px 0; 
-        font-family: inherit; 
-        font-size: 14px; 
-        outline: none; 
+    input, textarea {
+        border: none;
+        border-bottom: 1px solid var(--border);
+        padding: 10px 0;
+        font-family: inherit;
+        font-size: 14px;
+        outline: none;
         background: transparent;
     }
     input:focus, textarea:focus { border-bottom: 1px solid var(--text); }
-    button { 
-        align-self: flex-start; 
-        background: var(--text); 
-        color: white; 
-        border: none; 
-        padding: 10px 30px; 
-        font-size: 12px; 
-        text-transform: uppercase; 
-        letter-spacing: 0.1em; 
-        cursor: pointer; 
+    button {
+        align-self: flex-start;
+        background: var(--text);
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        cursor: pointer;
     }
 
     /* --- ANIMATION LOGIC --- */
-    
+
     @keyframes fadeInUp {
         from { opacity: 0; transform: translateY(20px); }
         to { opacity: 1; transform: translateY(0); }
@@ -135,7 +148,7 @@
         h1 { font-size: 32px; }
         .item { font-size: 14px; flex-direction: column; gap: 4px; }
     }
-        
+
     </style>
 </head>
 <body>
@@ -143,10 +156,13 @@
 <header>
     <h1>Andrew Scott</h1>
     <p class="subtitle">Musician and Audio Engineer</p>
+    <div class="logo-container">
+        <img src="reel.png" alt="Reel-to-reel tape machine" class="main-logo">
+    </div>
 </header>
 
 <div class="content">
-      
+
     <section>
         <h2>Collaborations</h2>
         <div class="list">
@@ -165,7 +181,7 @@
             <a href="https://open.spotify.com/album/2YKrT7Izbd8U5muoR0ZNaL" target="_blank" rel="noopener noreferrer" class="item">
                 <span>Minds Eye - Long Nights and Wasted Affairs (Guitar, Songwriting)</span>
                 <span class="year">2023</span>
-            </a> 
+            </a>
             <a href="https://open.spotify.com/album/6TAqeUCony0iS4iJLVAuZb" target="_blank" rel="noopener noreferrer" class="item">
                 <span>Blacksound - Breathless (Guitar, Songwriting)</span>
                 <span class="year">2021</span>
@@ -177,7 +193,7 @@
             <a href="https://open.spotify.com/album/6XWmsWkt52HMN3ZrjZAJIT" target="_blank" rel="noopener noreferrer" class="item">
                 <span>Realm of Mind & Andrew Scott - Secret Wisdom (Guitar, Mix/Master)</span>
                 <span class="year">2021</span>
-            </a>        
+            </a>
             <a href="https://open.spotify.com/album/1Z0JZQcRLzbENquF3aOJhb" target="_blank" rel="noopener noreferrer" class="item">
                 <span>Blacksound - Pathos (Guitar, Songwriting)</span>
                 <span class="year">2020</span>
@@ -188,24 +204,24 @@
             </a>
             <a href="https://open.spotify.com/artist/51Bl5AnprBnY2KtAL27wTx" target="_blank" rel="noopener noreferrer" class="item">
                 <span>Cromagnon - Back To The Caves/King Kong (Guitar, Mix/Master)</span>
-                <span class="year">2019, 2021</span>           
+                <span class="year">2019, 2021</span>
             </a>
             <a href="https://idlehands6.bandcamp.com/album/contradictions" target="_blank" rel="noopener noreferrer" class="item">
                 <span>Idlehands - Contradictions (All Instrumentation, Mix)</span>
-                <span class="year">2019</span>          
-            </a>    
+                <span class="year">2019</span>
+            </a>
             <a href="https://lordbendtner.bandcamp.com/album/ready-to-leave-2" target="_blank" rel="noopener noreferrer" class="item">
                 <span>Lord Bendtner - Ready to Leave (Bass, Engineering, Mix/Master)</span>
                 <span class="year">2017</span>
-            </a>  
+            </a>
              <a href="https://www.youtube.com/watch?v=OBVVEwqTeGU&list=PL8lB6h8KFjpAaVk9XOG6bJATR2MdoLrAl&index=9" target="_blank" rel="noopener noreferrer" class="item">
                 <span>Numans - Self Titled (Bass) </span>
                 <span class="year">2013</span>
-            </a> 
+            </a>
             <a href="https://foreverends1.bandcamp.com/track/prison-block-e-nnui" target="_blank" rel="noopener noreferrer" class="item">
                 <span>Foreverends - Prison Block E(nnui) - (Bass, Engineering/Mixing)</span>
                 <span class="year">2013</span>
-            </a> 
+            </a>
         </div>
     </section>
 
@@ -292,7 +308,7 @@
             </a>
         </div>
     </section>
-    
+
     <section>
     <h2>Socials</h2>
     <div class="social-links">
@@ -318,30 +334,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
