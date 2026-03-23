@@ -55,6 +55,13 @@
         height: auto;
         display: block;
     }
+    .footer-logo {
+        text-align: left;
+        margin-top: 60px; /* Provides "breathing room" below the button */
+        opacity: 0;
+        animation: fadeInUp 0.3s ease-out forwards;
+        animation-delay: 0.6s; /* Fires last, after the contact form appears */
+    }
 
     /* Sections */
     section {
@@ -329,6 +336,9 @@
             <textarea name="message" rows="3" placeholder="Project details" required></textarea>
             <button type="submit">Send Message</button>
         </form>
+        <div class="footer-logo">
+            <img src="comps.png" alt="Studio components icon" class="main-logo">
+        </div>
     </section>
 
 </div>
