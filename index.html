@@ -339,9 +339,9 @@
     <section class="contact-area">
         <h2>Contact</h2>
         <form action="https://formspree.io/f/xreyvjnq" method="POST">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="_replyto" placeholder="Email" required>
-            <textarea name="message" rows="3" placeholder="Project details" required></textarea>
+            <input type="text" name="name" placeholder="Name" required minlength="2" maxlength="100" pattern="[a-zA-Z\s\-\.\']+" title="Please enter a valid name (letters, spaces, hyphens, dots, or apostrophes).">
+            <input type="email" name="_replyto" placeholder="Email" required maxlength="100">
+            <textarea name="message" rows="3" placeholder="Project details" required minlength="10" maxlength="2000"></textarea>
             <button type="submit">Send Message</button>
         </form>
         <div class="footer-logo">
@@ -350,6 +350,18 @@
     </section>
 
 </div>
+
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        const nameField = this.querySelector('input[name="name"]');
+        const emailField = this.querySelector('input[name="_replyto"]');
+        const messageField = this.querySelector('textarea[name="message"]');
+
+        if (nameField) nameField.value = nameField.value.trim();
+        if (emailField) emailField.value = emailField.value.trim();
+        if (messageField) messageField.value = messageField.value.trim();
+    });
+</script>
 
 </body>
 </html>
