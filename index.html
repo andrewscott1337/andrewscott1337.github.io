@@ -43,33 +43,24 @@
 
     .subtitle { font-family: 'Gloock', serif; font-size: 30px; font-weight: 300; color: var(--muted); margin-top: 15px; /* Adjust this value to your liking */ }
 
+    /* Refined container for horizontal logo pairing */
     .logo-container {
-        text-align: left;
+        display: flex; /* Group them horizontally */
+        align-items: center; /* Vertically align centers */
+        justify-content: flex-start; /* Lock to left margin */
+        gap: 15px; /* Slight horizontal spacing between images */
         margin: 15px 0 5px 0;
         opacity: 0;
         animation: fadeInUp 0.3s ease-out forwards;
         animation-delay: 0.1s;
     }
+
+    /* Global logo class handles exact sizing for both */
     .main-logo {
         max-width: 80px;
         height: auto;
-        display: block;
+        display: block; /* Reset default inline spacing */
     }
-.footer-logo {
-    text-align: left;
-    margin-top: 60px;
-    margin-left: 0;
-    padding-left: 0;
-    opacity: 0;
-    animation: fadeInUp 0.3s ease-out forwards;
-    animation-delay: 0.6s;
-}
-
-.footer-logo .main-logo {
-    max-width: 275px;
-    display: block;
-    height: auto;
-}
         
     /* Sections */
     section {
@@ -174,6 +165,7 @@
     <p class="subtitle">Musician and Audio Engineer</p>
     <div class="logo-container">
         <img src="reel2.png" alt="Reel-to-reel tape machine" class="main-logo">
+        <img src="comps.png" alt="Studio components icon" class="main-logo comps-logo">
     </div>
 </header>
 
@@ -344,9 +336,6 @@
             <textarea name="message" rows="3" placeholder="Project details" required minlength="10" maxlength="2000"></textarea>
             <button type="submit">Send Message</button>
         </form>
-        <div class="footer-logo">
-            <img src="comps.png" alt="Studio components icon" class="main-logo">
-        </div>
     </section>
 
 </div>
