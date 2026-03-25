@@ -1,0 +1,174 @@
+        :root {
+        --bg: #faf8f6;
+        --text: #111111;
+        --muted: #888888;
+        --border: #eeeeee;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.2;
+        -webkit-font-smoothing: antialiased;
+        padding: 8vw 10vw;
+    }
+
+    /* Header */
+    header { margin-bottom: 60px; }
+
+    /* Updated for Gloock Font */
+    h1 {
+        font-family: 'Gloock', serif;
+        font-size: 66px;
+        font-weight: 400;
+        text-transform: none;
+        letter-spacing: -0.01em;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .subtitle { font-family: 'Gloock', serif; font-size: 30px; font-weight: 300; color: var(--muted); margin-top: 15px; /* Adjust this value to your liking */ }
+
+    /* 1. The Container (Handles the horizontal pairing) */
+    .logo-container {
+        display: flex;
+        align-items: center; /* Keeps their centers perfectly level */
+        justify-content: flex-start;
+        gap: 25px; /* Adjust this to change the space between the two images */
+        margin: 15px 0 5px 0;
+        opacity: 0;
+        animation: fadeInUp 0.3s ease-out forwards;
+        animation-delay: 0.1s;
+    }
+
+    /* 2. The Base Class (Sets the size for the Reel) */
+    .main-logo {
+        max-width: 80px; /* Change this to adjust the Reel size */
+        height: auto;
+        display: block;
+    }
+
+    /* 3. The Specific Override (Makes the Comps image larger) */
+    .comps-logo {
+        max-width: 130px; /* Change this to make the Comps bigger/smaller */
+        width: 130px;
+        height: auto;
+        display: block;
+    }
+
+    /* Sections */
+    section {
+        margin-bottom: 80px;
+        max-width: 600px;
+        opacity: 0;
+        animation: fadeInUp 0.3s ease-out forwards;
+    }
+
+    h2 {
+          font-family: 'Libre Baskerville', serif;
+          font-size: 22px;
+          font-weight: 400;
+          font-style: italic;
+          text-transform: uppercase;
+          /* Changed from var(--muted) to a darker charcoal for better legibility */
+          color: #444444;
+          margin-bottom: 20px;
+        }
+
+
+    .item {
+        position: relative;
+        text-decoration: none;
+        color: var(--text);
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        transition: color 0.2s ease;
+    }
+
+    .item:hover {
+        color: var(--muted, #4a4a4a); /* Using a darker gray fallback */
+        cursor: crosshair;           /* Changes the mouse to a + on hover */
+        /* border-bottom: 1px solid var(--muted); */
+}
+
+
+    .year { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+
+    /* Socials */
+    .social-list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px; /* Professional spacing for mobile tapping */
+    }
+
+    .social-item {
+        text-decoration: none;
+        color: var(--text);
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        transition: opacity 0.2s ease;
+    }
+
+    /* The "Patch Cable" Bullet */
+    .social-item::before {
+        content: "—";
+        margin-right: 12px;
+        color: var(--muted);
+        font-weight: 300;
+    }
+
+    .social-item:hover {
+        opacity: 0.6;
+    }
+
+    /* Contact Form */
+    .contact-area { margin-top: 0px; border-top: 1px solid var(--border); padding-top: 50px; }
+    form { display: flex; flex-direction: column; gap: 20px; }
+    input, textarea {
+        border: none;
+        border-bottom: 1px solid var(--border);
+        padding: 10px 0;
+        font-family: inherit;
+        font-size: 14px;
+        outline: none;
+        background: transparent;
+    }
+    input:focus, textarea:focus { border-bottom: 1px solid var(--text); }
+    button {
+        align-self: flex-start;
+        background: var(--text);
+        color: white;
+        border: none;
+        padding: 10px 30px;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        cursor: pointer;
+    }
+
+    /* --- ANIMATION LOGIC --- */
+
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    section:nth-child(1) { animation-delay: 0.1s; }
+    section:nth-child(2) { animation-delay: 0.2s; }
+    section:nth-child(3) { animation-delay: 0.3s; }
+    section:nth-child(4) { animation-delay: 0.4s; }
+    section:nth-child(5) { animation-delay: 0.5s; }
+
+    @media (max-width: 768px) {
+        body { padding: 40px 25px; }
+        h1 { font-size: 42px; line-height: 1.1; }
+        .subtitle { font-size: 20px; margin-top: 5px; }
+        .item { font-size: 14px; flex-direction: column; gap: 4px; }
+    }
