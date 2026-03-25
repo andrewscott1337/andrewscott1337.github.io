@@ -68,15 +68,13 @@
     }
 
     h2 {
-          font-family: 'Libre Baskerville', serif;
-          font-size: 22px;
-          font-weight: 400;
-          font-style: italic;
-          text-transform: uppercase;
-          /* Changed from var(--muted) to a darker charcoal for better legibility */
-          color: #444444;
-          margin-bottom: 20px;
-        }
+        font-family: 'Gloock', serif;
+        font-size: 22px;
+        font-weight: 400;
+        text-transform: none; /* Turns off the all-caps */
+        color: var(--text);
+        margin-bottom: 20px;
+    }
 
 
     .item {
