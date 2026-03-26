@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --bg-cad: #000000;
+    --grid-line: rgba(255, 255, 255, 0.1);
+    --cyan: #00ffff;
+    --magenta: #ff00ff;
+    --yellow: #ffff00;
+    --text-cad: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Space Mono', monospace;
+    background-color: var(--bg-cad);
+    color: var(--text-cad);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    padding: 5vw 8vw;
+    position: relative;
+}
+
+/* CAD Grid Background */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+        linear-gradient(var(--grid-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* Sub grid */
+body::after {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 10px 10px;
+    z-index: -2;
+    pointer-events: none;
+}
+
+header {
+    margin-bottom: 50px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/* Dimension line for header */
+header::after {
+    content: "DWG: 01";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 10px;
+    border-bottom: 1px solid var(--magenta);
+    border-left: 1px solid var(--magenta);
+    border-right: 1px solid var(--magenta);
+    color: var(--magenta);
+    font-size: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--cyan);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--yellow);
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.logo-container {
+    margin: 20px 0 10px 0;
+    padding: 10px;
+    border: 1px dashed var(--cyan);
+    display: inline-block;
+}
+
+.main-logo {
+    max-width: 70px;
+    filter: invert(1) sepia(100%) saturate(10000%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
+section {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--magenta);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: inline-block;
+    border: 1px solid var(--magenta);
+    padding: 5px 15px;
+}
+
+/* Dimension line for sections */
+h2::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: calc(100% + 15px);
+    width: 100vw;
+    height: 1px;
+    background: var(--magenta);
+    z-index: -1;
+}
+
+.list { display: flex; flex-direction: column; gap: 5px; }
+
+.item {
+    text-decoration: none;
+    color: var(--text-cad);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease;
+}
+
+.item:hover {
+    color: var(--yellow);
+    border-bottom: 1px solid var(--yellow);
+    padding-left: 10px;
+}
+
+.year { font-size: 14px; color: var(--cyan); }
+
+.social-list { display: flex; flex-wrap: wrap; gap: 20px; }
+
+.social-item {
+    text-decoration: none;
+    color: var(--cyan);
+    font-size: 16px;
+    border: 1px solid var(--cyan);
+    padding: 8px 15px;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+
+.social-item:hover { background: var(--cyan); color: var(--bg-cad); }
+
+.contact-area { margin-top: 0; padding-top: 0; border: none; }
+
+form { display: flex; flex-direction: column; gap: 15px; max-width: 500px; }
+
+input, textarea {
+    background: transparent;
+    border: 1px solid var(--text-cad);
+    padding: 10px;
+    color: var(--yellow);
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus, textarea:focus { border-color: var(--yellow); }
+
+button {
+    align-self: flex-start;
+    background: transparent;
+    color: var(--magenta);
+    border: 1px solid var(--magenta);
+    padding: 10px 30px;
+    font-size: 14px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover { background: var(--magenta); color: var(--bg-cad); }
+
+@media (max-width: 768px) {
+    body { padding: 30px 20px; }
+    h1 { font-size: 32px; }
+    .item { flex-direction: column; gap: 5px; }
+    h2::after { display: none; }
+}
