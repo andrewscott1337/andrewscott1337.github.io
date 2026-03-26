@@ -92,7 +92,7 @@ h1 {
 
 .main-logo {
     max-width: 70px;
-    filter: invert(1) sepia(100%) saturate(10000%) hue-rotate(180deg) brightness(100%) contrast(100%);
+    filter: invert(1) sepia(100%) saturate(1000%) hue-rotate(180deg) brightness(100%) contrast(100%);
 }
 
 section {
