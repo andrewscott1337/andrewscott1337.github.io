@@ -59,7 +59,7 @@ h1 {
     max-width: 60px;
     /* Give it a slight glossy bump */
     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
-    border-radius: 50%;
+    border-radius: 70%;
     background: radial-gradient(circle at 30% 30%, #fff, #ccc);
     padding: 5px;
 }
