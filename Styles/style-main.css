@@ -51,14 +51,6 @@
         display: block;
     }
 
-    /* 3. The Specific Override (Makes the Comps image larger) */
-    .comps-logo {
-        max-width: 130px; /* Change this to make the Comps bigger/smaller */
-        width: 130px;
-        height: auto;
-        display: block;
-    }
-
     /* Sections */
     section {
         margin-bottom: 80px;
