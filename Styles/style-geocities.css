@@ -141,3 +141,22 @@ button:active { border-style: inset; }
     body { padding: 10px; }
     h1 { font-size: 32px; }
 }
+
+/* GeoCities Logo Post-Processing (Fake Pixelation) */
+.main-logo {
+    /* We shrink it to an incredibly small size... */
+    width: 16px;
+    height: auto;
+
+    /* ...then blow it back up with pixel rendering to force hard, jagged edges */
+    transform: scale(4);
+    transform-origin: left center;
+    image-rendering: pixelated;
+
+    /* Add a terrible, crusty contrast filter to ruin the smooth gradients */
+    filter: contrast(250%) grayscale(100%) sepia(30%);
+
+    /* Add margin to accommodate the visual scale up so it doesn't overlap text */
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
