@@ -181,7 +181,7 @@
 
     <section class="contact-area">
         <h2>Contact</h2>
-        <form action="https://formspree.io/f/xreyvjnq" method="POST">
+        <form method="POST">
             <input type="text" name="name" placeholder="Name" required minlength="2" maxlength="100" pattern="[a-zA-Z\s\-\.\']+" title="Please enter a valid name (letters, spaces, hyphens, dots, or apostrophes).">
             <input type="email" name="_replyto" placeholder="Email" required maxlength="100">
             <textarea name="message" rows="3" placeholder="Project details" required minlength="10" maxlength="2000"></textarea>
@@ -200,6 +200,8 @@
         if (nameField) nameField.value = nameField.value.trim();
         if (emailField) emailField.value = emailField.value.trim();
         if (messageField) messageField.value = messageField.value.trim();
+
+        this.action = atob('aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vZi94cmV5dmpucQ==');
     });
 </script>
 
