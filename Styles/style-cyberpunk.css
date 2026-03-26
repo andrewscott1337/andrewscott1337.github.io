@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&family=Teko:wght@700&display=swap');
 
 :root {
     --bg: #0b0c10;
@@ -60,9 +60,9 @@ header::after {
 }
 
 h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 65px;
-    font-weight: 900;
+    font-family: 'Teko', sans-serif;
+    font-size: 80px;
+    font-weight: 700;
     text-transform: uppercase;
     color: #fff;
     text-shadow:
@@ -73,7 +73,9 @@ h1 {
         0 0 80px var(--neon-cyan);
     letter-spacing: 0.05em;
     margin-bottom: 10px;
-    animation: glitch-anim 3s infinite linear alternate-reverse;
+    line-height: 0.9;
+    opacity: 0;
+    animation: power-on 1.5s ease-out forwards;
 }
 
 .subtitle {
@@ -277,18 +279,13 @@ button:hover {
 }
 
 /* --- ANIMATION LOGIC --- */
-@keyframes glitch-anim {
-  0% { clip-path: inset(20% 0 80% 0); transform: translate(-2px, 1px); }
-  10% { clip-path: inset(50% 0 10% 0); transform: translate(2px, -1px); }
-  20% { clip-path: inset(10% 0 60% 0); transform: translate(-2px, -2px); }
-  30% { clip-path: inset(80% 0 5% 0); transform: translate(2px, 2px); }
-  40% { clip-path: inset(30% 0 40% 0); transform: translate(-1px, 1px); }
-  50% { clip-path: inset(10% 0 90% 0); transform: translate(1px, -1px); }
-  60% { clip-path: inset(60% 0 10% 0); transform: translate(2px, 1px); }
-  70% { clip-path: inset(20% 0 30% 0); transform: translate(-2px, -1px); }
-  80% { clip-path: inset(90% 0 5% 0); transform: translate(1px, 2px); }
-  90% { clip-path: inset(40% 0 40% 0); transform: translate(-1px, -2px); }
-  100% { clip-path: inset(0% 0 0% 0); transform: translate(0); }
+@keyframes power-on {
+  0% { opacity: 0; filter: brightness(0); transform: scale(0.95); }
+  20% { opacity: 1; filter: brightness(2); transform: scale(1.02); }
+  30% { opacity: 0.5; filter: brightness(0.5); transform: scale(0.98); }
+  40% { opacity: 1; filter: brightness(1.5); transform: scale(1); }
+  50% { opacity: 0.8; filter: brightness(0.8); }
+  100% { opacity: 1; filter: brightness(1); transform: scale(1); }
 }
 
 @media (max-width: 768px) {
