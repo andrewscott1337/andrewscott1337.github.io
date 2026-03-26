@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --muted: #000000;
+    --border: #000000;
+    --red: #e00000;
+    --yellow: #fce300;
+    --blue: #0033cc;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Space Grotesk', sans-serif;
+    border: 4px solid black;
+    padding: 8vw 10vw;
+}
+
+h1, .subtitle, h2, span {
+    font-family: 'Space Grotesk', sans-serif !important;
+}
+
+h1 {
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 4px solid black;
+    padding-bottom: 10px;
+}
+
+section {
+    border: 4px solid black;
+    padding: 20px;
+    margin-bottom: 40px;
+    position: relative;
+    background: white;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 20px;
+    height: 100%;
+    background-color: var(--yellow);
+    border-right: 4px solid black;
+    z-index: -1;
+}
+
+h2 {
+    border-bottom: 4px solid black;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.item {
+    border-bottom: 4px solid black;
+    padding: 15px 0;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item:hover {
+    background-color: var(--blue);
+    color: white;
+}
+
+.item:hover span {
+    color: white;
+}
+
+.item:hover .year {
+    color: white;
+}
+
+.social-item {
+    border: 4px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: background-color 0.2s;
+}
+
+.social-item::before {
+    display: none;
+}
+
+.social-item:hover {
+    background-color: var(--red);
+    color: white;
+    opacity: 1;
+}
+
+.contact-area {
+    border: 4px solid black;
+}
+
+input, textarea {
+    border: 4px solid black;
+    padding: 10px;
+    font-family: 'Space Grotesk', sans-serif;
+    border-radius: 0;
+}
+
+input:focus, textarea:focus {
+    border: 4px solid var(--blue);
+}
+
+button {
+    border: 4px solid black;
+    background-color: var(--yellow);
+    color: black;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    padding: 15px 30px;
+    border-radius: 0;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: var(--red);
+    color: white;
+}
