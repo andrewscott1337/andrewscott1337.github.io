@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Outfit:wght@400;600&display=swap');
+
+:root {
+    --bg-main: #f4d03f; /* Mustard Yellow */
+    --text: #3d2a1d;
+    --muted: #8b5a2b;
+    --orange: #e67e22; /* Burnt Orange */
+    --green: #6b8e23; /* Olive Green */
+    --pink: #ff69b4; /* Hot Pink */
+    --shadow: rgba(61, 42, 29, 0.4);
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text);
+    font-family: 'Outfit', sans-serif;
+    padding: 8vw 10vw;
+    background-image: radial-gradient(var(--orange) 2px, transparent 2px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+}
+
+h1, .subtitle, h2, span, a, input, textarea, button {
+    font-family: 'Outfit', sans-serif !important;
+}
+
+h1 {
+    font-family: 'Shrikhand', cursive !important;
+    font-size: 72px;
+    color: var(--pink);
+    text-shadow: 4px 4px 0px var(--orange), 8px 8px 0px var(--green);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-family: 'Shrikhand', cursive !important;
+    font-size: 36px;
+    color: var(--green);
+    text-shadow: 2px 2px 0px var(--text);
+    margin-top: 10px;
+}
+
+section {
+    background-color: #fff9e6;
+    border: 5px solid var(--orange);
+    border-radius: 40px 10px 40px 10px;
+    padding: 40px;
+    margin-bottom: 50px;
+    box-shadow: 15px 15px 0px var(--shadow);
+    position: relative;
+    overflow: visible;
+}
+
+section::after {
+    content: '✿';
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    font-size: 60px;
+    color: var(--pink);
+    text-shadow: 3px 3px 0px var(--text);
+    z-index: 10;
+    transform: rotate(15deg);
+}
+
+h2 {
+    font-family: 'Shrikhand', cursive !important;
+    font-size: 32px;
+    color: var(--orange);
+    border-bottom: 3px dashed var(--pink);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 0px var(--text);
+}
+
+.item {
+    border-radius: 20px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    background-color: #fdf5e6;
+    border: 3px solid var(--green);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 5px 5px 0px var(--shadow);
+}
+
+.item:hover {
+    background-color: var(--pink);
+    border-color: var(--text);
+    transform: translate(-5px, -5px) scale(1.02);
+    box-shadow: 10px 10px 0px var(--shadow);
+    cursor: pointer;
+}
+
+.item:hover span {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.item:hover .year {
+    color: #ffffff;
+}
+
+.year {
+    color: var(--muted);
+    font-weight: 600;
+    background-color: var(--orange);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 2px solid var(--text);
+}
+
+.social-item {
+    background-color: var(--green);
+    border: 3px solid var(--text);
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    font-family: 'Shrikhand', cursive !important;
+    font-size: 24px;
+    color: #ffffff;
+    transition: all 0.3s;
+    box-shadow: 8px 8px 0px var(--shadow);
+    justify-content: center;
+    text-shadow: 2px 2px 0px var(--text);
+}
+
+.social-item::before {
+    display: none;
+}
+
+.social-item:hover {
+    background-color: var(--pink);
+    transform: translate(-5px, -5px) rotate(-2deg);
+    box-shadow: 13px 13px 0px var(--shadow);
+    opacity: 1;
+}
+
+.contact-area {
+    border-top: none;
+}
+
+input, textarea {
+    background-color: #ffffff;
+    border: 4px solid var(--orange);
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 18px;
+    color: var(--text);
+    box-shadow: inset 5px 5px 0px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+}
+
+textarea {
+    border-radius: 35px;
+}
+
+input:focus, textarea:focus {
+    background-color: #fff9e6;
+    border-color: var(--pink);
+    outline: none;
+    box-shadow: inset 5px 5px 0px rgba(0, 0, 0, 0.05), 0 0 0 5px rgba(255, 105, 180, 0.3);
+}
+
+button {
+    background-color: var(--orange);
+    color: #ffffff;
+    font-family: 'Shrikhand', cursive !important;
+    font-size: 24px;
+    border: 4px solid var(--text);
+    border-radius: 40px;
+    padding: 20px 40px;
+    box-shadow: 8px 8px 0px var(--shadow);
+    transition: all 0.3s;
+    text-shadow: 2px 2px 0px var(--text);
+    align-self: center;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--green);
+    transform: translate(-5px, -5px);
+    box-shadow: 13px 13px 0px var(--shadow);
+}
