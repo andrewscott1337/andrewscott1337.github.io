@@ -39,6 +39,22 @@ h1 {
     letter-spacing: 1px;
 }
 
+/* Container alignment for the logo */
+.logo-container {
+    margin: 15px 0 25px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* 1. Xbox Logo Post-Processing */
+.main-logo {
+    width: 65px; /* Hard width acts as a true limiter */
+    height: auto;
+    display: block;
+    /* Continuous filter chain so the browser parses it perfectly */
+    filter: brightness(0) invert(1) sepia(1) saturate(1000%) hue-rotate(80deg) brightness(1.2) contrast(1) drop-shadow(0 0 4px #10dc60);
+}
+
 section {
     background-color: var(--bg-sec);
     border: 2px solid var(--border-color);
@@ -61,14 +77,28 @@ h2 {
     display: inline-block;
 }
 
+/* Restores the horizontal layout and adds the wrap limits */
 .item {
-    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; 
+    text-decoration: none;
+    border-bottom: none !important;
     padding: 15px 0;
     margin-bottom: 5px;
     transition: all 0.2s ease-in-out;
     background: transparent;
     transform: skewX(-10deg);
     padding-left: 10px;
+    color: #ffffff;
+}
+
+/* Forces the album text to stay on one line and adds '...' */
+.item span:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .item:hover {
@@ -87,10 +117,12 @@ h2 {
     color: var(--text);
 }
 
+/* Protects the year from getting squished by long titles */
 .year {
-    color: var(--muted);
+    color: #cccccc;
     font-weight: 500;
     font-size: 14px;
+    flex-shrink: 0; 
 }
 
 .social-item {
@@ -104,7 +136,9 @@ h2 {
     text-transform: uppercase;
     transition: all 0.2s;
     transform: skewX(-10deg);
-    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .social-item::before {
@@ -131,6 +165,8 @@ input, textarea {
     padding: 15px 20px;
     transition: all 0.3s;
     transform: skewX(-5deg);
+    font-family: inherit;
+    font-size: 14px;
 }
 
 input:focus, textarea:focus {
@@ -152,6 +188,7 @@ button {
     transform: skewX(-10deg);
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 button::before {
@@ -173,13 +210,6 @@ button:hover {
 
 button:hover::before {
     left: 0;
-}
-
-/* 1. Xbox Logo Post-Processing */
-.main-logo {
-    max-width: 45px; /* Shrinks the image */
-    /* This specific filter chain turns a standard image into glowing neon green */
-    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(80deg) brightness(1.2) contrast(1.5) drop-shadow(0 0 8px #10dc60);
 }
 
 /* 2. Global Old TV CRT Overlay */
