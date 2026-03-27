@@ -198,14 +198,4 @@ button:hover { background: var(--magenta); color: var(--bg-cad); }
     .item { flex-direction: column; gap: 5px; }
 }
 
-/* Master Document Stamp */
-html::before {
-    content: "DWG_01";
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    color: var(--cyan);
-    font-size: 14px;
-    font-weight: 700;
-    z-index: 10;
-}
+
