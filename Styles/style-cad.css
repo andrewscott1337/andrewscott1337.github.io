@@ -55,7 +55,7 @@ header {
 
 /* Dimension line for header */
 header::after {
-    content: "DWG: 01";
+    /* content: "DWG: 01"; */
     position: absolute;
     bottom: 0; left: 0; right: 0;
     height: 10px;
