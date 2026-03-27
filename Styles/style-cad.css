@@ -37,7 +37,7 @@ body::before {
 
 /* Sub grid */
 body::after {
-    content: "";
+    content: "DWG_01";
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background-image:
@@ -56,7 +56,7 @@ header {
 
 /* Dimension line for header */
 header::after {
-    /* content: "DWG: 01"; */
+    content: "DWG_02";
     position: absolute;
     bottom: 0; left: 0; right: 0;
     height: 10px;
@@ -115,7 +115,7 @@ h2 {
 
 /* Dimension line for sections */
 h2::after {
-    content: "";
+    content: "DEG_03";
     position: absolute;
     top: 15px;
     left: calc(100% + 15px);
