@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;700&family=Teko:wght@700&display=swap');
 
 :root {
@@ -60,7 +61,8 @@ header::after {
 }
 
 h1 {
-    font-family: 'Teko', sans-serif;
+    /* font-family: 'Teko', sans-serif; */
+    font-family: 'Sixtyfour', sans-serif;
     font-size: 80px;
     font-weight: 700;
     text-transform: uppercase;
