@@ -56,15 +56,15 @@ h1 {
 }
 
 .main-logo {
-    width: 100px;         /* Increased from 60px to show more detail */
-    height: 100px;        /* Keep width and height equal for a perfect circle */
+    width: 85px;           /* Increased from 60px */
+    height: 85px;          /* Matches width for a perfect circle */
+    object-fit: contain;   /* Ensures the full reel image stays inside the bubble */
     
-    border-radius: 50%;   /* 50% is the mathematical limit for a circle */
-    background: radial-gradient(circle at 30% 30%, #ffffff, #cccccc);
-    padding: 15px;        /* Increased 'safe zone' so the reel edges don't clip */
-    
-    object-fit: contain;  /* This ensures the full reel image fits inside the padding */
-    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3));
+    /* Retained Original Design Elements */
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
+    border-radius: 50%;    /* 50% is the standard for a clean circle */
+    background: radial-gradient(circle at 30% 30%, #fff, #ccc);
+    padding: 8px;          /* Balanced padding for the new 85px size */
     display: block;
 }
 
