@@ -62,13 +62,14 @@ h2 {
 }
 
 .item {
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: none !important;
     padding: 15px 0;
     margin-bottom: 5px;
     transition: all 0.2s ease-in-out;
     background: transparent;
     transform: skewX(-10deg);
     padding-left: 10px;
+    color: #ffffff;
 }
 
 .item:hover {
@@ -88,7 +89,7 @@ h2 {
 }
 
 .year {
-    color: var(--muted);
+    color: #cccccc;
     font-weight: 500;
     font-size: 14px;
 }
@@ -177,9 +178,16 @@ button:hover::before {
 
 /* 1. Xbox Logo Post-Processing */
 .main-logo {
-    max-width: 45px; /* Shrinks the image */
-    /* This specific filter chain turns a standard image into glowing neon green */
-    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(80deg) brightness(1.2) contrast(1.5) drop-shadow(0 0 8px #10dc60);
+    /* Step 1: Set New Size (+40%) */
+    max-width: 65px;
+
+    /* Step 2: New Sharpened Filter Chain */
+    /* This technique uses extreme contrast to keep lines sharp before recoloring */
+    filter: brightness(0) invert(1) sepia(1) saturate(1000%) hue-rotate(80deg) brightness(1.2) contrast(1)
+
+    /* Step 3: Reduce Drop Shadow Bloom */
+    /* Shrinking the glow radius keeps internal details visible */
+    drop-shadow(0 0 4px #10dc60);
 }
 
 /* 2. Global Old TV CRT Overlay */
