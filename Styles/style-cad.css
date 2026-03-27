@@ -37,7 +37,7 @@ body::before {
 
 /* Sub grid */
 body::after {
-    content: "DWG_01";
+    content: "";
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     background-image:
@@ -113,16 +113,17 @@ h2 {
     position: relative;
 }
 
-/* Dimension line for sections */
-h2::after {
-    content: "DEG_03";
+/* Full-Width Section Divider */
+section::before {
+    content: "DWG_03";
     position: absolute;
-    top: 15px;
-    left: calc(100% + 15px);
-    width: 100vw;
-    height: 1px;
-    background: var(--magenta);
-    z-index: -1;
+    top: -20px; /* Pushes the line above the H2 title */
+    left: 0;
+    width: 100%; /* Spans exactly from the left margin to the right margin */
+    border-top: 1px solid var(--magenta);
+    color: var(--magenta);
+    font-size: 10px;
+    line-height: 0; /* Anchors the text onto the line */
 }
 
 .list { display: flex; flex-direction: column; gap: 5px; }
@@ -195,5 +196,16 @@ button:hover { background: var(--magenta); color: var(--bg-cad); }
     body { padding: 30px 20px; }
     h1 { font-size: 32px; }
     .item { flex-direction: column; gap: 5px; }
-    h2::after { display: none; }
+}
+
+/* Master Document Stamp */
+html::before {
+    content: "DWG_01";
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: var(--cyan);
+    font-size: 14px;
+    font-weight: 700;
+    z-index: 10;
 }
