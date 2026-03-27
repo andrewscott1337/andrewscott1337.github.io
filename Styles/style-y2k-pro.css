@@ -64,7 +64,7 @@ h1 {
     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.2));
     border-radius: 50%;    /* 50% is the standard for a clean circle */
     background: radial-gradient(circle at 30% 30%, #fff, #ccc);
-    padding: 8px;          /* Balanced padding for the new 85px size */
+    padding: 18px;          /* Balanced padding for the new 85px size */
     display: block;
 }
 
