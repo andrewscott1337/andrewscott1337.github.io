@@ -33,12 +33,18 @@ h1 {
     font-weight: 600;
 }
 
+/* Container alignment for the logo */
+.logo-container {
+    margin: 15px 0 25px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
 /* Logo Sizing and Aero Gloss */
 .main-logo {
-    max-width: 80px; /* Brings it back down to your standard size */
+    width: 80px; /* Hard width acts as a true limiter */
     height: auto;
     display: block;
-    /* Adds a soft, airy shadow to match the Frutiger Aero vibe */
     filter: drop-shadow(0 4px 6px rgba(79, 195, 247, 0.4)); 
 }
 
@@ -61,12 +67,26 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Restores the horizontal layout */
 .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px; /* Bumper between the title and the year */
     border-radius: 20px;
     padding: 10px 15px;
     margin-bottom: 5px;
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
     background: transparent;
+    text-decoration: none; /* Keeps links clean */
+}
+
+/* Forces the album text to stay on one line and adds '...' if it's too long */
+.item span:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text);
 }
 
 .item:hover {
@@ -76,7 +96,7 @@ h2 {
     cursor: pointer;
 }
 
-.item:hover span {
+.item:hover span:first-child {
     color: #01579b;
 }
 
@@ -84,9 +104,11 @@ h2 {
     color: #0277bd;
 }
 
+/* Protects the year from getting squished by long album titles */
 .year {
     color: var(--muted);
     font-weight: 600;
+    flex-shrink: 0;
 }
 
 .social-item {
@@ -100,6 +122,9 @@ h2 {
     transition: all 0.3s;
     box-shadow: inset 0 2px 10px rgba(255, 255, 255, 0.9);
     justify-content: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .social-item::before {
@@ -124,6 +149,9 @@ input, textarea {
     padding: 15px 20px;
     box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: all 0.3s;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
 }
 
 textarea {
@@ -149,6 +177,8 @@ button {
     box-shadow: 0 4px 15px rgba(79, 195, 247, 0.4), inset 0 2px 5px rgba(255, 255, 255, 0.8);
     transition: all 0.3s;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    align-self: flex-start;
 }
 
 button:hover {
