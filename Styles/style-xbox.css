@@ -52,7 +52,7 @@ h1 {
     height: auto;
     display: block;
     /* Reverted to the original working green filter chain */
-    filter: filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(80deg) brightness(1.2) contrast(1.5) drop-shadow(0 0 8px #10dc60);
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(80deg) brightness(1.2) contrast(1.5) drop-shadow(0 0 8px #10dc60);
 }
 
 section {
