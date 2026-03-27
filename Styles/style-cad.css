@@ -56,7 +56,7 @@ header {
 
 /* Dimension line for header */
 header::after {
-    content: "DWG_02";
+    content: "DWG_01";
     position: absolute;
     bottom: 0; left: 0; right: 0;
     height: 10px;
@@ -115,7 +115,7 @@ h2 {
 
 /* Full-Width Section Divider */
 section::before {
-    content: "DWG_03";
+    content: "DWG_02";
     position: absolute;
     top: -20px; /* Pushes the line above the H2 title */
     left: 0;
