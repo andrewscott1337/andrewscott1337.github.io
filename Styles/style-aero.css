@@ -33,6 +33,15 @@ h1 {
     font-weight: 600;
 }
 
+/* Logo Sizing and Aero Gloss */
+.main-logo {
+    max-width: 80px; /* Brings it back down to your standard size */
+    height: auto;
+    display: block;
+    /* Adds a soft, airy shadow to match the Frutiger Aero vibe */
+    filter: drop-shadow(0 4px 6px rgba(79, 195, 247, 0.4)); 
+}
+
 section {
     background: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(10px);
