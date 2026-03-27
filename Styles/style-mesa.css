@@ -181,7 +181,11 @@ h2 {
 }
 
 /* Contact Form */
-.contact-area { margin-top: 0px; padding-top: 0; border: none; }
+.contact-area {
+    margin-top: 50px;
+    padding-top: 40px;
+    border: 1px solid var(--border);
+}
 form { display: flex; flex-direction: column; gap: 20px; }
 input, textarea {
     border: 1px solid var(--border);

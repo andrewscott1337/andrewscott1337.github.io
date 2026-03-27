@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&family=Arimo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Arimo:wght@700&family=Audiowide&display=swap');
 
 :root {
     --bg-plastic: #1a1a1a;
@@ -37,9 +37,9 @@ header {
 }
 
 h1 {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Audiowide', sans-serif;
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 400;
     color: #e0e0e0;
     text-transform: uppercase;
     letter-spacing: -1px;
@@ -69,9 +69,9 @@ section {
 }
 
 h2 {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Audiowide', sans-serif;
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 1px;
