@@ -51,8 +51,8 @@ h1 {
     width: 65px; /* Hard width acts as a true limiter */
     height: auto;
     display: block;
-    /* Continuous filter chain so the browser parses it perfectly */
-    filter: brightness(0) invert(1) sepia(1) saturate(1000%) hue-rotate(80deg) brightness(1.2) contrast(1) drop-shadow(0 0 4px #10dc60);
+    /* Recalculated exact filter to hit Xbox Neon Green (#10dc60) */
+    filter: invert(61%) sepia(50%) saturate(5456%) hue-rotate(107deg) brightness(98%) contrast(90%) drop-shadow(0 0 4px #10dc60);
 }
 
 section {
@@ -77,11 +77,11 @@ h2 {
     display: inline-block;
 }
 
-/* Restores the horizontal layout and adds the wrap limits */
+/* Restores the horizontal layout and allows wrapping */
 .item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start; /* Anchors the year to the top if text wraps */
     gap: 15px; 
     text-decoration: none;
     border-bottom: none !important;
@@ -94,11 +94,10 @@ h2 {
     color: #ffffff;
 }
 
-/* Forces the album text to stay on one line and adds '...' */
+/* Allows the album text to wrap naturally on narrow screens */
 .item span:first-child {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    white-space: normal; /* Removes the hard limiter */
+    line-height: 1.4; /* Adds a little breathing room between lines */
 }
 
 .item:hover {
