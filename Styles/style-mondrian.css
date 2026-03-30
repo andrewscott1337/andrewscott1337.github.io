@@ -174,3 +174,34 @@ button:hover {
     background-color: var(--red);
     color: white;
 }
+
+
+/* --- THEME SWITCHER (BASE POSITIONING) --- */
+#theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    #theme-switcher {
+        top: 15px;
+        right: 15px;
+        font-size: 14px; /* Slightly smaller for mobile */
+    }
+}
+
+
+#theme-switcher {
+    background: #ffffff;
+    color: #000000;
+    border: 4px solid #000000; /* Thick primary border */
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 0;
+    box-shadow: 4px 4px 0px #000000; /* Hard shadow block */
+}

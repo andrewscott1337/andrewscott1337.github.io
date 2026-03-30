@@ -206,3 +206,33 @@ section:nth-child(5) { animation-delay: 0.5s; }
     .item { flex-direction: column; gap: 5px; }
     .year { align-self: flex-start; }
 }
+
+
+/* --- THEME SWITCHER (BASE POSITIONING) --- */
+#theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    #theme-switcher {
+        top: 15px;
+        right: 15px;
+        font-size: 14px; /* Slightly smaller for mobile */
+    }
+}
+
+
+#theme-switcher {
+    background: #111111;
+    color: #8b9371; /* Olive drab text */
+    border: 1px solid #8b9371;
+    font-family: monospace;
+    text-transform: uppercase;
+    border-radius: 0;
+}
