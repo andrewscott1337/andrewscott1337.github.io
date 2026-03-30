@@ -241,7 +241,7 @@ button:active {
 
 
 #theme-switcher {
-    background: transparent;
+    background: #2d2d2d;
     color: inherit;
     border: 1px solid currentColor;
     font-family: inherit;
