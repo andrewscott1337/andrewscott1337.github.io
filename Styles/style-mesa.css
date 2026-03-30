@@ -28,7 +28,7 @@ body {
 
 /* Facility Badge */
 body::before {
-    content: "SECTION 7G";
+    content: "Theme";
     position: fixed;
     top: 20px;
     right: 20px;
