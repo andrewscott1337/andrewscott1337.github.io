@@ -254,7 +254,7 @@ body::after {
 
 
 #theme-switcher {
-    background: transparent;
+    background: #141414;
     color: inherit;
     border: 1px solid currentColor;
     font-family: inherit;
