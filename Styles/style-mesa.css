@@ -243,3 +243,31 @@ section:nth-child(5) { animation-delay: 0.6s; }
     .item::after { display: none; }
     .year { align-self: flex-start; }
 }
+
+/* --- THEME SWITCHER (BASE POSITIONING) --- */
+#theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    #theme-switcher {
+        top: 15px;
+        right: 15px;
+        font-size: 14px; /* Slightly smaller for mobile */
+    }
+}
+
+
+#theme-switcher {
+    background: transparent;
+    color: inherit;
+    border: 1px solid currentColor;
+    font-family: inherit;
+    border-radius: 4px;
+}

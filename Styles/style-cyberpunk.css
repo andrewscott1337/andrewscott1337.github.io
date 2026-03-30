@@ -299,3 +299,34 @@ button:hover {
     .year { align-self: flex-start; }
     .item:hover { transform: translateX(5px); }
 }
+
+
+/* --- THEME SWITCHER (BASE POSITIONING) --- */
+#theme-switcher {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    #theme-switcher {
+        top: 15px;
+        right: 15px;
+        font-size: 14px; /* Slightly smaller for mobile */
+    }
+}
+
+
+#theme-switcher {
+    background: rgba(10, 10, 10, 0.8);
+    color: var(--neon-blue); /* Use the theme's neon blue/pink variable */
+    border: 1px solid var(--neon-pink);
+    box-shadow: 0 0 8px var(--neon-pink);
+    font-family: inherit;
+    text-transform: uppercase;
+    border-radius: 0;
+}
