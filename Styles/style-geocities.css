@@ -183,7 +183,7 @@ button:active { border-style: inset; }
 
 
 #theme-switcher {
-    background: transparent;
+    background: var(--bg-color);
     color: inherit;
     border: 1px solid currentColor;
     font-family: inherit;
