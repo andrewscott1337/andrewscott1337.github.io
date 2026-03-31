@@ -63,7 +63,7 @@ header::after {
 h1 {
     /* font-family: 'Teko', sans-serif; */
     font-family: 'Sixtyfour', sans-serif;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -82,7 +82,7 @@ h1 {
 
 .subtitle {
     font-family: 'Orbitron', sans-serif;
-    font-size: 24px;
+    font-size: 19px;
     color: var(--neon-pink);
     text-transform: uppercase;
     letter-spacing: 0.2em;
