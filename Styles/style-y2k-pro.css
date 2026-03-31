@@ -216,6 +216,7 @@ button:active {
 
 @media (max-width: 768px) {
     body { padding: 30px 20px; }
+    header { margin-top: 20px; }
     .item { flex-direction: column; text-align: center; gap: 5px; border-radius: 10px; }
 }
 
@@ -233,9 +234,13 @@ button:active {
 
 @media (max-width: 768px) {
     #theme-switcher {
-        top: 15px;
-        right: 15px;
-        font-size: 14px; /* Slightly smaller for mobile */
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 auto 15px auto;
+        display: block;
+        width: max-content;
+        font-size: 14px;
     }
 }
 

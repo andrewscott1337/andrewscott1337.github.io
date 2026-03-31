@@ -205,3 +205,8 @@ button:hover {
     border-radius: 0;
     box-shadow: 4px 4px 0px #000000; /* Hard shadow block */
 }
+
+
+@media (max-width: 768px) {
+    .social-list { display: flex; flex-direction: column; gap: 10px; }
+}
