@@ -153,10 +153,6 @@ h2 {
     opacity: 1;
 }
 
-.contact-area {
-    border-top: none;
-}
-
 input, textarea {
     background-color: #000000;
     border: 1px solid var(--border-color);

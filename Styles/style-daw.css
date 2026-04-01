@@ -176,8 +176,6 @@ section:nth-of-type(3) .item { border-left: 6px solid var(--accent-green); }
 
 .social-item:hover { background: #444; }
 
-.contact-area { margin-top: 0; padding-top: 0; border: none; }
-
 form { display: flex; flex-direction: column; gap: 15px; }
 
 input, textarea {
