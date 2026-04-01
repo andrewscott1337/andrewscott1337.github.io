@@ -168,7 +168,7 @@ button:hover { background: var(--accent-red); }
 
 @media (max-width: 768px) {
     #theme-switcher {
-        top: 15px;
+        top: 5px;
         right: 15px;
         font-size: 14px; /* Slightly smaller for mobile */
     }
