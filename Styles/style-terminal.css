@@ -138,7 +138,7 @@ h2::before {
     display: flex;
     justify-content: space-between;
     padding: 8px 0;
-    transition: all 0.4s ease-out;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .item:hover {
@@ -146,7 +146,6 @@ h2::before {
     background-color: var(--text);
     cursor: crosshair;
     text-shadow: none;
-    transition: all 0s;
 }
 
 .item::before {
@@ -175,7 +174,7 @@ h2::before {
     font-size: 20px;
     display: flex;
     align-items: center;
-    transition: all 0.4s ease-out;
+    transition: background-color 0.2s ease, color 0.2s ease;
     padding: 5px;
 }
 
@@ -189,7 +188,6 @@ h2::before {
     background-color: var(--text);
     color: var(--bg);
     text-shadow: none;
-    transition: all 0s;
 }
 .social-item:hover::before {
     color: var(--bg);
@@ -222,14 +220,13 @@ button {
     font-family: inherit;
     text-transform: uppercase;
     cursor: pointer;
-    transition: all 0.4s ease-out;
+    transition: background-color 0.2s, color 0.2s;
     text-shadow: 0 0 5px rgba(51, 255, 0, 0.5);
 }
 button:hover {
     background: var(--text);
     color: var(--bg);
     text-shadow: none;
-    transition: all 0s;
 }
 
 /* --- ANIMATION LOGIC --- */
@@ -281,11 +278,4 @@ section:nth-child(5) { animation-delay: 1.0s; }
     font-family: 'VT323', monospace;
     text-transform: uppercase;
     border-radius: 0;
-    transition: all 0.4s ease-out;
-}
-
-#theme-switcher:hover {
-    background: #33ff00;
-    color: #000;
-    transition: all 0s;
 }
