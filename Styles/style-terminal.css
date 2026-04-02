@@ -196,7 +196,6 @@ h2::before {
 }
 
 /* Contact Form */
-.contact-area { margin-top: 0px; border-top: none; padding-top: 0; }
 form { display: flex; flex-direction: column; gap: 15px; }
 input, textarea {
     border: 1px solid var(--border);
