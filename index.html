@@ -241,17 +241,21 @@
 </script>
 
 <script>
-    document.querySelector('form').addEventListener('submit', function(event) {
-        const nameField = this.querySelector('input[name="name"]');
-        const emailField = this.querySelector('input[name="_replyto"]');
-        const messageField = this.querySelector('textarea[name="message"]');
+    (function() {
+        const form = document.querySelector('form');
+        const nameField = form.querySelector('input[name="name"]');
+        const emailField = form.querySelector('input[name="_replyto"]');
+        const messageField = form.querySelector('textarea[name="message"]');
+        const actionUrl = atob('aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vZi94cmV5dmpucQ==');
 
-        if (nameField) nameField.value = nameField.value.trim();
-        if (emailField) emailField.value = emailField.value.trim();
-        if (messageField) messageField.value = messageField.value.trim();
+        form.addEventListener('submit', function(event) {
+            if (nameField) nameField.value = nameField.value.trim();
+            if (emailField) emailField.value = emailField.value.trim();
+            if (messageField) messageField.value = messageField.value.trim();
 
-        this.action = atob('aHR0cHM6Ly9mb3Jtc3ByZWUuaW8vZi94cmV5dmpucQ==');
-    });
+            this.action = actionUrl;
+        });
+    })();
 </script>
 
 </body>
