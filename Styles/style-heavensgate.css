@@ -193,6 +193,6 @@ button:hover { background: var(--accent-red); }
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 40px auto 0;
+    margin: 30px auto 0;
     filter: drop-shadow(0 0 5px var(--accent-cyan));
 }
