@@ -182,3 +182,17 @@ button:hover { background: var(--accent-red); }
     font-family: inherit;
     border-radius: 4px;
 }
+
+.contact-area::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    height: 77px;
+    background-image: url('../images/comps (1).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 40px auto 0;
+    filter: drop-shadow(0 0 5px var(--accent-cyan));
+}
