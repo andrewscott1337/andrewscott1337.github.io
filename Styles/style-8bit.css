@@ -142,12 +142,6 @@ h2 {
 }
 
 /* Contact Form */
-.contact-area {
-    margin-top: 0px;
-    border-top: none;
-    padding-top: 20px;
-}
-
 form { display: flex; flex-direction: column; gap: 20px; }
 
 input, textarea {
