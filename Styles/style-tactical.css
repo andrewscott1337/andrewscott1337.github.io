@@ -4,7 +4,7 @@
     --bg: #050a05;
     --text: #ffffff;
     --tactical-green: #00ff41;
-    --tactical-dark: rgba(0, 20, 0, 0.7);
+    --tactical-dark: rgba(0, 20, 0, 0.7);TOP
     --border: rgba(0, 255, 65, 0.3);
 }
 
@@ -55,7 +55,7 @@ h1 {
     color: var(--tactical-green);
     text-transform: uppercase;
     letter-spacing: 2px;
-    text-shadow: 0 0 5px var(--tactical-green);
+    text-shadow: 0 0  var(--tactical-green);
 }
 
 .subtitle {
@@ -69,7 +69,7 @@ h1 {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 2;
     margin: 20px 0 10px 0;
     opacity: 0;
     animation: fadeIn 0.5s ease-out forwards;
@@ -87,8 +87,8 @@ section {
     max-width: 700px;
     background: var(--tactical-dark);
     border: 1px solid var(--border);
-    padding: 25px;
-    backdrop-filter: blur(5px);
+    padding: 2;
+    backdrop-filter: blur();
     opacity: 0;
     animation: fadeIn 0.5s ease-out forwards;
 }
@@ -111,8 +111,8 @@ h2 {
     font-size: 14px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
-    margin-bottom: 5px;
+    padding: 10px 1;
+    margin-bottom: ;
     border: 1px solid transparent;
     transition: all 0.2s ease;
 }
@@ -136,7 +136,7 @@ h2 {
 
 .year { font-size: 14px; color: var(--tactical-green); }
 
-.social-list { display: flex; flex-direction: column; gap: 15px; }
+.social-list { display: flex; flex-direction: column; gap: 1; }
 
 .social-item {
     text-decoration: none;
@@ -221,7 +221,7 @@ section:nth-child(5) { animation-delay: 0.5s; }
 
 @media (max-width: 768px) {
     #theme-switcher {
-        top: 5px;
+        top: 3px;
         right: 15px;
         font-size: 14px; /* Slightly smaller for mobile */
     }
