@@ -164,9 +164,10 @@ button:active { border-style: inset; }
 
 /* --- THEME SWITCHER (BASE POSITIONING) --- */
 #theme-switcher {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    position: relative;
+    margin: 0 auto 15px auto;
+    display: block;
+    width: max-content;
     z-index: 999;
     cursor: pointer;
     outline: none;
@@ -175,12 +176,6 @@ button:active { border-style: inset; }
 
 @media (max-width: 768px) {
     #theme-switcher {
-        position: relative;
-        top: auto;
-        right: auto;
-        margin: 0 auto 15px auto;
-        display: block;
-        width: max-content;
         font-size: 14px;
     }
 }
