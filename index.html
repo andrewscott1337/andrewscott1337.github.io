@@ -222,9 +222,11 @@
     const themeSwitcher = document.getElementById('theme-switcher');
     const mainThemeLink = document.getElementById('main-theme'); // Make sure the active <link> tag has this ID
 
+    const validThemes = Array.from(themeSwitcher.options).map(opt => opt.value);
+
     // Load saved theme on boot
     const savedTheme = localStorage.getItem('andrewPortfolioTheme');
-    if (savedTheme) {
+    if (savedTheme && validThemes.includes(savedTheme)) {
         mainThemeLink.setAttribute('href', savedTheme);
         themeSwitcher.value = savedTheme;
     }
@@ -232,8 +234,10 @@
     // Listen for changes
     themeSwitcher.addEventListener('change', (e) => {
         const selectedTheme = e.target.value;
-        mainThemeLink.setAttribute('href', selectedTheme);
-        localStorage.setItem('andrewPortfolioTheme', selectedTheme);
+        if (validThemes.includes(selectedTheme)) {
+            mainThemeLink.setAttribute('href', selectedTheme);
+            localStorage.setItem('andrewPortfolioTheme', selectedTheme);
+        }
     });
 </script>
 
