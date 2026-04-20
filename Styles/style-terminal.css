@@ -278,3 +278,17 @@ section:nth-child(5) { animation-delay: 1.0s; }
     text-transform: uppercase;
     border-radius: 0;
 }
+
+.contact-area::after {
+    content: "";
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    height: 77px;
+    margin: 30px auto 0;
+    background-image: url('../images/comps (1).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: invert(65%) sepia(93%) saturate(3015%) hue-rotate(85deg) brightness(122%) contrast(116%) drop-shadow(0 0 5px #33ff00);
+}
