@@ -20,7 +20,7 @@ body {
 }
 
 /* Header */
-header { margin-bottom: 60px; background: var(--mac-white); border: var(--mac-border-outset); padding: 20px; }
+header { margin-bottom: 60px; max-width: 600px; background: var(--mac-white); border: var(--mac-border-outset); padding: 20px; }
 
 h1 {
     font-family: 'EB Garamond', Garamond, serif;
