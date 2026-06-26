@@ -11,7 +11,7 @@
         font-family: 'Inter', sans-serif;
         background-color: var(--bg);
         color: var(--text);
-        line-height: 1.2;
+        line-height: 1.5;
         -webkit-font-smoothing: antialiased;
         padding: 8vw 10vw;
     }
@@ -25,12 +25,12 @@
         font-size: 66px;
         font-weight: 400;
         text-transform: none;
-        letter-spacing: -0.01em;
+        letter-spacing: 0.02em;
         line-height: 1.2;
         margin-bottom: 10px;
     }
 
-    .subtitle { font-family: 'Gloock', serif; font-size: 30px; font-weight: 300; color: var(--muted); margin-top: 15px; /* Adjust this value to your liking */ }
+    .subtitle { font-family: 'Gloock', serif; font-size: 30px; font-weight: 300; color: var(--muted); margin-top: 15px; /* Adjust this value to your liking */ letter-spacing: 0.02em; }
 
     /* 1. The Container (Handles the horizontal pairing) */
     .logo-container {
@@ -66,6 +66,7 @@
         text-transform: none; /* Turns off the all-caps */
         color: var(--text);
         margin-bottom: 20px;
+    letter-spacing: 0.01em;
     }
 
 
@@ -77,14 +78,13 @@
         display: flex;
         justify-content: space-between;
         padding: 12px 0;
-        transition: color 0.2s ease;
+        transition: all 0.3s ease;
     }
 
     .item:hover {
-        color: var(--muted, #4a4a4a); /* Using a darker gray fallback */
-        cursor: crosshair;           /* Changes the mouse to a + on hover */
-        /* border-bottom: 1px solid var(--muted); */
-}
+        color: var(--text);
+        transform: translateX(4px);
+    }
 
 
     .year { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
@@ -130,7 +130,7 @@
         outline: none;
         background: transparent;
     }
-    input:focus, textarea:focus { border-bottom: 1px solid var(--text); }
+    input:focus, textarea:focus { border-bottom: 1px solid var(--text); background: rgba(0,0,0,0.02); }
     button {
         align-self: flex-start;
         background: var(--text);
@@ -141,6 +141,7 @@
         text-transform: uppercase;
         letter-spacing: 0.1em;
         cursor: pointer;
+    transition: all 0.3s ease;
     }
 
     /* --- ANIMATION LOGIC --- */
@@ -191,3 +192,9 @@
     font-family: inherit;
     border-radius: 4px;
 }
+
+    button:hover {
+        background: #333333;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transform: translateY(-1px);
+    }
