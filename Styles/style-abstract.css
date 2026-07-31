@@ -119,10 +119,10 @@ h1 {
 }
 
 .main-logo {
-    max-width: 75px; /* Slightly larger */
+    max-width: 165px; /* Slightly larger */
     height: auto;
     /* Move down slightly and rotate to match aesthetic */
-    transform: translateY(10px) rotate(-10deg);
+    transform: translateY(160.7px) rotate(-10deg);
     /* Adjust logo so it stands out with blend mode and add a subtle shadow */
     filter: invert(1) drop-shadow(2px 4px 6px rgba(255, 255, 255, 0.4));
 }
