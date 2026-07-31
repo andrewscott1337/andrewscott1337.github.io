@@ -119,10 +119,12 @@ h1 {
 }
 
 .main-logo {
-    max-width: 60px; /* Scaled down slightly to match new font sizes */
+    max-width: 75px; /* Slightly larger */
     height: auto;
-    /* Adjust logo so it stands out with blend mode */
-    filter: invert(1);
+    /* Move down slightly and rotate to match aesthetic */
+    transform: translateY(10px) rotate(-10deg);
+    /* Adjust logo so it stands out with blend mode and add a subtle shadow */
+    filter: invert(1) drop-shadow(2px 4px 6px rgba(255, 255, 255, 0.4));
 }
 
 /* Scatter sections asymmetrically, each with its own gentle tilt so the whole page feels hand-placed rather than gridded */
@@ -277,7 +279,7 @@ button:hover {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    filter: invert(1);
+    filter: invert(1) drop-shadow(2px 4px 6px rgba(255, 255, 255, 0.4));
 }
 
 /* Theme Switcher Base */
