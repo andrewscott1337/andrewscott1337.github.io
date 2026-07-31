@@ -10,6 +10,10 @@
     body {
         font-family: 'Inter', sans-serif;
         background-color: var(--bg);
+        background-image:
+            radial-gradient(circle at 15% 50%, rgba(200, 200, 200, 0.05) 0%, transparent 50%),
+            radial-gradient(circle at 85% 30%, rgba(200, 200, 200, 0.05) 0%, transparent 50%);
+        background-attachment: fixed;
         color: var(--text);
         line-height: 1.2;
         -webkit-font-smoothing: antialiased;
@@ -49,6 +53,7 @@
         max-width: 80px; /* Change this to adjust the Reel size */
         height: auto;
         display: block;
+        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
     }
 
     /* Sections */
@@ -57,6 +62,13 @@
         max-width: 600px;
         opacity: 0;
         animation: fadeInUp 0.3s ease-out forwards;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        border-radius: 16px;
+        padding: 40px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.03);
     }
 
     h2 {
@@ -77,12 +89,14 @@
         display: flex;
         justify-content: space-between;
         padding: 12px 0;
-        transition: color 0.2s ease;
+        transition: color 0.2s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        transform-origin: left center;
     }
 
     .item:hover {
         color: var(--muted, #4a4a4a); /* Using a darker gray fallback */
         cursor: crosshair;           /* Changes the mouse to a + on hover */
+        transform: scale(1.02);
         /* border-bottom: 1px solid var(--muted); */
 }
 
@@ -103,7 +117,8 @@
         font-weight: 500;
         display: flex;
         align-items: center;
-        transition: opacity 0.2s ease;
+        transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        transform-origin: left center;
     }
 
     /* The "Patch Cable" Bullet */
@@ -116,31 +131,47 @@
 
     .social-item:hover {
         opacity: 0.6;
+        transform: scale(1.02) translateX(4px);
     }
 
     /* Contact Form */
     .contact-area { margin-top: 0px; border-top: 1px solid var(--border); padding-top: 50px; }
     form { display: flex; flex-direction: column; gap: 20px; }
     input, textarea {
-        border: none;
-        border-bottom: 1px solid #cccccc;
-        padding: 10px 0;
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 14px 18px;
         font-family: inherit;
         font-size: 14px;
         outline: none;
-        background: transparent;
+        background: rgba(255, 255, 255, 0.7);
+        transition: all 0.3s ease;
+        box-shadow: inset 0 2px 4px rgba(0,0,0,0.01);
     }
-    input:focus, textarea:focus { border-bottom: 1px solid var(--text); }
+    input:focus, textarea:focus {
+        border-color: #bbbbbb;
+        background: #ffffff;
+        box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05), inset 0 2px 4px rgba(0,0,0,0.01);
+    }
     button {
         align-self: flex-start;
-        background: var(--text);
+        background: linear-gradient(135deg, #2a2a2a, #111111);
         color: white;
         border: none;
-        padding: 10px 30px;
+        border-radius: 8px;
+        padding: 12px 32px;
         font-size: 12px;
+        font-weight: 500;
         text-transform: uppercase;
         letter-spacing: 0.1em;
         cursor: pointer;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     }
 
     /* --- ANIMATION LOGIC --- */
@@ -203,4 +234,5 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
 }
