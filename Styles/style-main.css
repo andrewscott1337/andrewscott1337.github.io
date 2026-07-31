@@ -89,14 +89,12 @@
         display: flex;
         justify-content: space-between;
         padding: 12px 0;
-        transition: color 0.2s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-        transform-origin: left center;
+        transition: color 0.2s ease;
     }
 
     .item:hover {
         color: var(--muted, #4a4a4a); /* Using a darker gray fallback */
         cursor: crosshair;           /* Changes the mouse to a + on hover */
-        transform: scale(1.02);
         /* border-bottom: 1px solid var(--muted); */
 }
 
@@ -117,8 +115,7 @@
         font-weight: 500;
         display: flex;
         align-items: center;
-        transition: opacity 0.2s ease, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-        transform-origin: left center;
+        transition: opacity 0.2s ease;
     }
 
     /* The "Patch Cable" Bullet */
@@ -131,7 +128,6 @@
 
     .social-item:hover {
         opacity: 0.6;
-        transform: scale(1.02) translateX(4px);
     }
 
     /* Contact Form */
@@ -166,11 +162,10 @@
         letter-spacing: 0.1em;
         cursor: pointer;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        transition: box-shadow 0.2s ease;
     }
 
     button:hover {
-        transform: translateY(-2px);
         box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     }
 
