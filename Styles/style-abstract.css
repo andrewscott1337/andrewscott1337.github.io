@@ -324,7 +324,7 @@ button:hover {
     section:nth-of-type(1)::before {
         width: 25vw;
         height: 15vh;
-        bottom: -5vh;
+        bottom: -15vh;
         right: -10vw;
     }
 
