@@ -70,7 +70,7 @@ h2 {
 /* Restores the horizontal layout and allows wrapping for mobile */
 .item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; gap: 10px;
     align-items: flex-start; /* Anchors the year to the top if text wraps */
     gap: 15px; /* Bumper between the title and the year */
     border-radius: 20px;

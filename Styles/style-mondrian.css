@@ -80,7 +80,7 @@ h2 {
     transition: background-color 0.2s, color 0.2s;
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start; gap: 10px;
 }
 
 .item span {

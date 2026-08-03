@@ -110,7 +110,7 @@ h2 {
     color: var(--text);
     font-size: 14px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; gap: 10px;
     padding: 10px 1;
     margin-bottom: ;
     border: 1px solid transparent;

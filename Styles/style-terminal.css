@@ -136,7 +136,7 @@ h2::before {
     color: var(--text);
     font-size: 18px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; gap: 10px;
     padding: 8px 0;
     transition: background-color 0.2s ease, color 0.2s ease;
 }

@@ -105,7 +105,7 @@ h2 {
     color: #444;
     font-size: 14px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start; gap: 10px;
     align-items: center;
     padding: 10px 15px;
     background: var(--metallic-gradient);
