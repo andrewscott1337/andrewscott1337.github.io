@@ -173,6 +173,11 @@ h2::before {
     padding-bottom: 200px; /* Space for the comps image */
 }
 
+/* Override Mac folder icon for contact section header with envelope */
+.contact-area h2::before {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHJlY3QgeD0iMSIgeT0iMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjEwIiBmaWxsPSIjZmZmIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHBvbHlsaW5lIHBvaW50cz0iMSwyIDgsNyAxNSwyIiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMS41Ii8+Cjwvc3ZnPg==');
+}
+
 form { display: flex; flex-direction: column; gap: 15px; }
 
 input, textarea {
