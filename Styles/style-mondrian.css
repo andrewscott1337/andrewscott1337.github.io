@@ -123,6 +123,16 @@ section:nth-of-type(3) .item:hover .year {
     color: black;
 }
 
+section:nth-of-type(4) .item:hover {
+    background-color: var(--mondrian-yellow);
+    color: var(--mondrian-black);
+}
+section:nth-of-type(4) .item:hover span,
+section:nth-of-type(4) .item:hover .year {
+    color: var(--mondrian-black);
+}
+
+
 .social-item {
     border: 4px solid black;
     padding: 10px;

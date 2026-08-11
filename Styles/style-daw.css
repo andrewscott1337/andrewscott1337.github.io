@@ -131,6 +131,7 @@ h2 {
 section:nth-of-type(1) .item { border-left: 6px solid var(--accent-blue); }
 section:nth-of-type(2) .item { border-left: 6px solid var(--accent-orange); }
 section:nth-of-type(3) .item { border-left: 6px solid var(--accent-green); }
+section:nth-of-type(4) .item { border-left: 6px solid var(--accent-purple); }
 
 .item:hover {
     background: #444;

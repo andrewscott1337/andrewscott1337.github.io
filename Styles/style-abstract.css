@@ -72,7 +72,7 @@ section:nth-of-type(1)::before {
 }
 
 /* NEW: Diamond shape in the left negative space between Production (above) and Socials (below) */
-section:nth-of-type(4)::before {
+section:nth-of-type(5)::before {
     content: '';
     position: absolute;
     top: -35vh;     /* Pushed up into the empty negative space above Socials */
@@ -156,7 +156,15 @@ section:nth-of-type(3) {
 }
 
 /* 4. Socials / Around the web */
+/* Short Film */
 section:nth-of-type(4) {
+    top: 200vh;
+    left: 20vw;
+    width: 50vw;
+    transform: rotate(1deg);
+}
+
+section:nth-of-type(5) {
     top: 235vh;
     left: 20vw;
     width: 40vw;
@@ -164,7 +172,7 @@ section:nth-of-type(4) {
 }
 
 /* 5. Contact */
-section:nth-of-type(5) {
+section:nth-of-type(6) {
     top: 265vh;
     left: 50vw;
     transform: translateX(-50%) rotate(-1.5deg);
@@ -331,7 +339,7 @@ button:hover {
     }
 
     /* Mobile scaling for the new Diamond */
-    section:nth-of-type(4)::before {
+    section:nth-of-type(5)::before {
         width: 20vw;
         height: 20vw;
         top: -20vh;
@@ -354,7 +362,7 @@ button:hover {
         margin-top: 15vh !important;
     }
     
-    section:nth-of-type(5) {
+    section:nth-of-type(6) {
         transform: none !important;
         left: auto !important;
     }
