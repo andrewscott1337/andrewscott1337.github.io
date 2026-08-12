@@ -190,7 +190,7 @@ section:nth-of-type(3) h2::before {
 
 /* Override Mac folder icon for Short Film section header with camera */
 section:nth-of-type(4) h2::before {
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHJlY3QgeD0iMiIgeT0iNCIgd2lkdGg9IjEyIiBoZWlnaHQ9IjgiIHJ4PSIxIiBmaWxsPSIjYjBjNGRlIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGNpcmNsZSBjeD0iOCIgY3k9IjgiIHI9IjIuNSIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8Y2lyY2xlIGN4PSI4IiBjeT0iOCIgcj0iMSIgZmlsbD0iIzAwMCIvPgogIDxyZWN0IHg9IjQiIHk9IjIiIHdpZHRoPSIzIiBoZWlnaHQ9IjIiIGZpbGw9IiNiMGM0ZGUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8cmVjdCB4PSIxMSIgeT0iMiIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEiLz4KPC9zdmc+Cg==');
+    background-image: url('data:image/svg+xml,<svg width='16' height='14' xmlns='http://www.w3.org/2000/svg'><circle cx='5' cy='4' r='2' fill='%23b0c4de' stroke='%23000' stroke-width='1.5'/><circle cx='10' cy='4' r='2' fill='%23b0c4de' stroke='%23000' stroke-width='1.5'/><circle cx='5' cy='4' r='0.5' fill='%23000'/><circle cx='10' cy='4' r='0.5' fill='%23000'/><rect x='2' y='5' width='3' height='2' rx='0.5' fill='%23fff' stroke='%23000' stroke-width='1'/><rect x='3' y='6' width='9' height='5' rx='1' fill='%23b0c4de' stroke='%23000' stroke-width='1.5'/><path d='M12 7.5l2.5-1.5v5l-2.5-1.5z' fill='%23fff' stroke='%23000' stroke-width='1.5' stroke-linejoin='round'/></svg>');
 }
 
 /* Override Mac folder icon for Socials section header with address book */
