@@ -107,6 +107,8 @@ h2::before {
     width: 12px;
     height: 16px;
     margin-right: 10px;
+    flex-shrink: 0;
+    min-width: 12px;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHBhdGggZD0iTTAgMCBMOCAwIEwxMiA0IEwxMiAxNiBMMCAxNiBaIiBmaWxsPSIjZmZmIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjgiIHkxPSIwIiB4Mj0iOCIgeTI9IjQiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8bGluZSB4MT0iOCIgeTE9IjQiIHgyPSIxMiIgeTI9IjQiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KICA8cmVjdCB4PSIyIiB5PSI2IiB3aWR0aD0iOCIgaGVpZ2h0PSIxIiBmaWxsPSIjMDAwMGZmIi8+CiAgPHJlY3QgeD0iMiIgeT0iOSIgd2lkdGg9IjgiIGhlaWdodD0iMSIgZmlsbD0iIzAwMDBmZiIvPgogIDxyZWN0IHg9IjIiIHk9IjEyIiB3aWR0aD0iNSIgaGVpZ2h0PSIxIiBmaWxsPSIjMDAwMGZmIi8+Cjwvc3ZnPg==');
     background-size: cover;
     image-rendering: pixelated;
@@ -150,6 +152,8 @@ h2::before {
     width: 16px;
     height: 16px;
     margin-right: 10px;
+    flex-shrink: 0;
+    min-width: 16px;
     background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iI2MwYzBjMCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9IiMwMDAwZmYiLz4KICA8cmVjdCB4PSIxMCIgeT0iNCIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iIzAwMDBmZiIvPgogIDxwYXRoIGQ9Ik01IDEwIFE4IDEzIDExIDEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZjAwMDAiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjgiIHkxPSI2IiB4Mj0iOCIgeTI9IjgiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPC9zdmc+');
     background-size: cover;
     image-rendering: pixelated;
@@ -262,7 +266,7 @@ section:nth-child(6) { animation-delay: 0.6s; }
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left;
-    filter: grayscale(30%) contrast(85%) drop-shadow(2px 2px 0px black;
+    filter: grayscale(30%) contrast(85%) drop-shadow(2px 2px 0px black);
 }
 
 @media (max-width: 768px) {
