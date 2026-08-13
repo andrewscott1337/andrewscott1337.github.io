@@ -241,6 +241,81 @@ button:active {
     transform: translate(1px, 1px);
 }
 
+/* --- SCROLLBAR --- */
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+    background: var(--mac-white);
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--mac-white);
+    background-image:
+        linear-gradient(45deg, var(--mac-gray) 25%, transparent 25%, transparent 75%, var(--mac-gray) 75%, var(--mac-gray)),
+        linear-gradient(45deg, var(--mac-gray) 25%, transparent 25%, transparent 75%, var(--mac-gray) 75%, var(--mac-gray));
+    background-size: 2px 2px;
+    background-position: 0 0, 1px 1px;
+    border-left: 1px solid var(--mac-black);
+}
+
+::-webkit-scrollbar-track:horizontal {
+    border-left: none;
+    border-top: 1px solid var(--mac-black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--mac-gray);
+    border: var(--mac-border-outset);
+}
+
+::-webkit-scrollbar-thumb:active {
+    border: var(--mac-border-inset);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--mac-gray);
+}
+
+::-webkit-scrollbar-button {
+    background: var(--mac-gray);
+    border: var(--mac-border-outset);
+    height: 16px;
+    width: 16px;
+    display: block;
+}
+
+::-webkit-scrollbar-button:active {
+    border: var(--mac-border-inset);
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHBhdGggZD0iTTUgMkw4IDdIMnoiIGZpbGw9IiMwMDAiLz48L3N2Zz4=');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: 1px solid var(--mac-black);
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHBhdGggZD0iTTUgOEwyIDNoNnoiIGZpbGw9IiMwMDAiLz48L3N2Zz4=');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: 1px solid var(--mac-black);
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHBhdGggZD0iTTIgNUw3IDJ2NnoiIGZpbGw9IiMwMDAiLz48L3N2Zz4=');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid var(--mac-black);
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSIxMCI+PHBhdGggZD0iTTggNUwzIDhWMnoiIGZpbGw9IiMwMDAiLz48L3N2Zz4=');
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid var(--mac-black);
+}
+
 /* --- ANIMATION LOGIC --- */
 
 @keyframes fadeInUp {
