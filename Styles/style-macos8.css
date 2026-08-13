@@ -145,7 +145,7 @@ h2::before {
     padding: 4px;
 }
 
-/* Smiling Mac icon for socials */
+/* Speach Bubble icon for socials */
 .social-item::before {
     content: '';
     display: inline-block;
@@ -154,7 +154,7 @@ h2::before {
     margin-right: 10px;
     flex-shrink: 0;
     min-width: 16px;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHJlY3QgeD0iMSIgeT0iMSIgd2lkdGg9IjE0IiBoZWlnaHQ9IjE0IiByeD0iMiIgZmlsbD0iI2MwYzBjMCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEuNSIvPgogIDxyZWN0IHg9IjQiIHk9IjQiIHdpZHRoPSIyIiBoZWlnaHQ9IjIiIGZpbGw9IiMwMDAwZmYiLz4KICA8cmVjdCB4PSIxMCIgeT0iNCIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iIzAwMDBmZiIvPgogIDxwYXRoIGQ9Ik01IDEwIFE4IDEzIDExIDEwIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZjAwMDAiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPGxpbmUgeDE9IjgiIHkxPSI2IiB4Mj0iOCIgeTI9IjgiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4KPC9zdmc+');
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEuNSAzLjV2N2MwIDEuMS45IDIgMiAyaDJ2M2wzLTNoNGMxLjEgMCAyLS45IDItMnYtN2MwLTEuMS0uOS0yLTItMmgtOWMtMS4xIDAtMiAuOS0yIDJ6IiBmaWxsPSIjNGQ5NGZmIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+PC9zdmc+');
     background-size: cover;
     image-rendering: pixelated;
 }
