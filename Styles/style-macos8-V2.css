@@ -111,11 +111,12 @@ h2::before {
     margin-right: 10px;
     flex-shrink: 0;
     min-width: 12px;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMS41IiB5PSIxLjUiIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMyIgcng9IjEiIGZpbGw9IiNjMGMwYzAiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48cmVjdCB4PSI0IiB5PSIxLjUiIHdpZHRoPSI4IiBoZWlnaHQ9IjUiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48cmVjdCB4PSIzIiB5PSIxMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjQuNSIgZmlsbD0iI2UwZTBlMCIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEuNSIvPjwvc3ZnPg==');
-    background-size: cover;
+    background-image: url('data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2027%2027%22%3E%3Cpath%20fill=%22%23fff%22%20d=%22M1%201H24V2H25V3H26V26H1Z%22/%3E%3Cpath%20fill=%22%23000%22%20d=%22M24%201h1v1h-1zM25%202h1v1h-1zM14%202h3v1h-3zM17%203h1v4h-1zM14%207h3v1h-3zM13%203h1v4h-1zM26%203h1v23h-1zM0%201h1v25h-1zM5%2013h17v1H5zM7%209h13v1H7zM1%200V1H6V9H7V1H20V9H21V1H24V0ZM1%2027V26H4V14H5V26H22V14H23V26H26V27Z%22/%3E%3C/svg%3E');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     image-rendering: pixelated;
 }
-
 .item > span:first-child {
     flex-grow: 1;
 }
