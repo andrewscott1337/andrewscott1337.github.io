@@ -1,0 +1,57 @@
+<svg width="16" height="14" viewBox="0 0 16 14" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="slateGrad" x1="25%" y1="20%" x2="80%" y2="85%">
+      <stop offset="0%" stop-color="#f7f7f7" />
+      <stop offset="55%" stop-color="#e0e0e0" />
+      <stop offset="100%" stop-color="#bdbdbd" />
+    </linearGradient>
+    <radialGradient id="shadowGrad" cx="45%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.55" />
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+    <clipPath id="lowerBarClip">
+      <polygon points="3.13,8.43 9.16,2.4 10.17,3.42 4.15,9.44" />
+    </clipPath>
+    <clipPath id="upperArmClip">
+      <polygon points="1.85,7.64 5.53,0.42 6.81,1.08 3.12,8.29" />
+    </clipPath>
+  </defs>
+
+  <!-- Ground drop shadow -->
+  <ellipse cx="9.36" cy="12.78" rx="1.88" ry="0.69" fill="url(#shadowGrad)" />
+
+  <!-- Main slate body -->
+  <polygon points="3.13,8.43 9.16,2.4 13.95,7.2 7.92,13.22" fill="url(#slateGrad)" />
+
+  <!-- Subtle inner light bevel -->
+  <polyline points="7.85,12.67 4.63,9.44 10.17,3.91" fill="none" stroke="#ffffff" stroke-width="0.45" stroke-opacity="0.8" />
+
+  <!-- Classic Mac OS 9 dark 3D bottom-right edge -->
+  <polygon points="7.61,12.91 13.64,6.88 13.95,7.2 7.92,13.22" fill="#444444" />
+
+  <!-- Outer outline of slate body -->
+  <polyline points="9.16,2.4 13.95,7.2 7.92,13.22" fill="none" stroke="#1a1a1a" stroke-width="0.6" stroke-linejoin="round" />
+  <line x1="3.13" y1="8.43" x2="7.92" y2="13.22" stroke="#555555" stroke-width="0.55" stroke-linecap="round" />
+
+  <!-- Lower fixed striped bar -->
+  <g clip-path="url(#lowerBarClip)">
+    <polygon points="3.13,8.43 9.16,2.4 10.17,3.42 4.15,9.44" fill="#f8f8f8" />
+    <rect x="3.77" y="0" width="0.84" height="14" fill="#1a1a1a" />
+    <rect x="5.45" y="0" width="0.89" height="14" fill="#1a1a1a" />
+    <rect x="7.13" y="0" width="0.89" height="14" fill="#1a1a1a" />
+    <rect x="8.81" y="0" width="1.24" height="14" fill="#1a1a1a" />
+  </g>
+  <polygon points="3.13,8.43 9.16,2.4 10.17,3.42 4.15,9.44" fill="none" stroke="#333333" stroke-width="0.45" stroke-linejoin="round" />
+
+  <!-- Upper open clapper arm -->
+  <g clip-path="url(#upperArmClip)">
+    <polygon points="1.85,7.64 5.53,0.42 6.81,1.08 3.12,8.29" fill="#f8f8f8" />
+    <rect x="0" y="0.13" width="16" height="1.28" fill="#1a1a1a" />
+    <rect x="0" y="2.21" width="16" height="0.93" fill="#1a1a1a" />
+    <rect x="0" y="3.93" width="16" height="0.89" fill="#1a1a1a" />
+    <rect x="0" y="5.61" width="16" height="0.84" fill="#1a1a1a" />
+    <rect x="0" y="7.2" width="16" height="1.48" fill="#1a1a1a" />
+  </g>
+  <polygon points="1.85,7.64 5.53,0.42 6.81,1.08 3.12,8.29" fill="none" stroke="#222222" stroke-width="0.45" stroke-linejoin="round" />
+</svg>
